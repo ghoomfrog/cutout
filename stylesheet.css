@@ -453,8 +453,7 @@ div:has(label.common ~ select) {
 	margin-bottom: 0;
 }
 
-p:has(+ form[action^="/edit_reply"]),
-form[action^="/edit_reply"] p {
+div:has(form[action^="/edit_reply"]) p {
 	text-align: center;
 }
 
