@@ -488,3 +488,13 @@ form[action=""] input[name="request_sub"] {
 .bar {
 	background-color: black;
 }
+
+.bar_container {
+	padding: 0px;
+	border-color: black;
+}
+
+.rounded .bar_container,
+.rounded .bar {
+	border-radius: 2em;
+}
