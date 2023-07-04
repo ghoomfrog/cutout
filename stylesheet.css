@@ -8,6 +8,7 @@ body {
 
 body {
 	padding: 0;
+	background-color: #eee;
 }
 
 #logo {
@@ -56,6 +57,10 @@ body {
 	display: none;
 	font-weight: normal;
 	color: black;
+}
+
+.c, .body, #main_menu_wrapper, table {
+	background-color: white;
 }
 
 .c {
@@ -237,9 +242,7 @@ th:empty ~ th {
 }
 
 #notice:has(+ br) {
-	background-color: white;
-	color: black;
-	cursor: auto;
+	display: none;
 }
 
 li {
@@ -354,14 +357,14 @@ select {
 	text-align: center;
 }
 
+.body:has(> form[action="/compose_message/mods"]),
 .body:has(> form[action="/compose_message/admins"]) {
-	border-top: solid black 1px;
+	background-color: inherit;
+	border: dashed black 1px;
 }
-
 
 .rounded .body:has(> form[action="/compose_message/mods"]),
 .rounded .body:has(> form[action="/compose_message/admins"]) {
-	border-top: solid black 1px;
 	border-top-left-radius: 9px;
 	border-top-right-radius: 9px;
 }
@@ -475,10 +478,6 @@ div:has(form[action^="/edit_reply"]) p {
 #quotePreview > .c {
 	background-color: black;
 	color: white;
-}
-
-#quotePreview > .body {
-	background-color: white;
 }
 
 p:has(+ form[action=""] input[name="request_sub"]) {
