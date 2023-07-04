@@ -243,7 +243,7 @@ th:empty ~ th {
 	position:fixed;
 	width: 100%;
 	border-bottom: solid black 1px;
-	height: 20px;
+	height: 19px;
 	z-index: 1000;
 	display: flex;
 	flex-direction: row;
