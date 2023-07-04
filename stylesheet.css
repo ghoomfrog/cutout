@@ -452,3 +452,8 @@ div:has(label.common ~ select) {
 #error ~ .body.standalone li {
 	margin-bottom: 0;
 }
+
+p:has(+ form[action^="/edit_reply"]),
+form[action^="/edit_reply"] p {
+	text-align: center;
+}
