@@ -428,10 +428,6 @@ form:has(#e-mail) * {
 	color: #aaa;
 }
 
-#body_wrapper:has(.noscreen) {
-	text-align: center;
-}
-
 #body_wrapper:has(.noscreen) .caption {
 	text-align: left;
 }
