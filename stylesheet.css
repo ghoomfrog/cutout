@@ -484,3 +484,7 @@ form[action=""] input[name="request_sub"] {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.bar {
+	background-color: black;
+}
