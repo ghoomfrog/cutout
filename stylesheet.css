@@ -427,3 +427,12 @@ form:has(#e-mail) * {
 .t_quote::after {
 	color: #aaa;
 }
+
+label.common ~ .caption {
+	text-align: left;
+}
+
+div:has(label.common ~ input),
+div:has(label.common ~ select) {
+	text-align: left;
+}
