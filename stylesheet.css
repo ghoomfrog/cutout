@@ -428,8 +428,12 @@ form:has(#e-mail) * {
 	color: #aaa;
 }
 
+label.common {
+	width: 50%;
+}
+
 label.common ~ .caption {
-	text-align: left;
+	text-align: center;
 }
 
 div:has(label.common ~ input),
