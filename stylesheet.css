@@ -440,3 +440,15 @@ div:has(label.common ~ input),
 div:has(label.common ~ select) {
 	text-align: left;
 }
+
+#error ~ .body.standalone {
+	border-top: solid black 1px;
+}
+
+.rounded #error ~ .body.standalone {
+	border-radius: 9px;
+}
+
+#error ~ .body.standalone li {
+	margin-bottom: 0;
+}
