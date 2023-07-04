@@ -474,3 +474,12 @@ div:has(form[action^="/edit_reply"]) p {
 #quotePreview > .body {
 	background-color: white;
 }
+
+p:has(+ form[action=""] input[name="request_sub"]) {
+	text-align: center;
+}
+
+form[action=""] input[name="request_sub"] {
+	margin-left: auto;
+	margin-right: auto;
+}
