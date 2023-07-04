@@ -243,12 +243,16 @@ th:empty ~ th {
 	position:fixed;
 	width: 100%;
 	border-bottom: solid black 1px;
-	height: 19px;
+	height: 20px;
 	z-index: 1000;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 #notice::after {
-	content: " (click to discard)";
+	content: "​ (click to discard)";
 	opacity: 60%;
 }
 
