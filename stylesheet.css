@@ -503,3 +503,7 @@ form[action=""] input[name="request_sub"] {
 .rounded .bar {
 	border-radius: 2em;
 }
+
+.snippet {
+	font-style: normal;
+}
