@@ -457,3 +457,12 @@ p:has(+ form[action^="/edit_reply"]),
 form[action^="/edit_reply"] p {
 	text-align: center;
 }
+
+#body_title:has(+ div form[action^="/edit_reply"]) a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#body_title:has(+ div form[action^="/edit_reply"]) a:hover {
+	text-decoration: none;
+}
