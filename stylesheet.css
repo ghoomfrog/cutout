@@ -465,3 +465,12 @@ div:has(form[action^="/edit_reply"]) p {
 #body_title:has(+ div form[action^="/edit_reply"]) a:hover {
 	text-decoration: none;
 }
+
+#quotePreview > .c {
+	background-color: black;
+	color: white;
+}
+
+#quotePreview > .body {
+	background-color: white;
+}
