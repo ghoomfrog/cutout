@@ -1,0 +1,429 @@
+/* TODO: cover all markup syntax */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+	font-family: 'IBM Plex Sans';
+}
+
+body {
+	padding: 0;
+}
+
+#logo {
+	display: none;
+}
+
+#main_menu_wrapper {
+	border-bottom: solid black 1px;
+}
+
+#main_menu {
+	margin: 0;
+	padding: 8px !important;
+}
+
+#main_menu li a {
+	text-decoration: none;
+}
+
+#main_menu li a:hover {
+	text-decoration: underline;
+}
+
+#body_wrapper {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.footer {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+#body_title {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 2em;
+}
+
+.pre_topic {
+	display: none;
+	font-weight: normal;
+	color: black;
+}
+
+.c {
+	border: dashed black 1px;
+	border-bottom-style: solid;
+	padding: 8px;
+}
+
+.c:first-of-type {
+	margin-top: 20px;
+	border-style: solid;
+}
+
+.c:nth-of-type(2) {
+	margin-top: 0px;
+}
+
+.body {
+	border: dashed black 1px;
+	border-top: none;
+	padding: 8px;
+}
+
+.body:first-of-type {
+	border-style: solid;
+	border-top: none;
+}
+
+.rounded h3, .rounded .body {
+	box-shadow: none !important;
+}
+
+.quote {
+	color: #555;
+}
+
+.help {
+	font-weight: normal;
+}
+
+a {
+	font-weight: normal;
+}
+
+thead {
+	border-bottom: solid black 1px;
+}
+
+.c.preview {
+	border-style: solid;
+	background-color: black;
+	color: white;
+}
+
+.body.preview {
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+}
+
+.body:has(+ form > table),
+.body:has(+ table) {
+	margin-bottom: 0;
+	border-bottom: solid black 1px;
+}
+
+.body + form > table,
+.body + table {
+	border-top-width: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.body + form > table,
+.body + table {
+	border-style: solid;
+}
+
+.rounded .body:has(+ form > table),
+.rounded .body:has(+ table) {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+button, input[type="submit"] {
+	background-color: white;
+	border: solid black 1px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 4px 8px;
+}
+
+button:hover, input[type="submit"]:hover {
+	transform: translate(-2px, -2px);
+	box-shadow: 2px 2px black;
+}
+
+button:active, input[type="submit"]:active {
+	transform: translate(0, 0);
+	box-shadow: none;
+	border-width: 2px;
+	padding: 3px 7px;
+}
+
+.rounded button, .rounded input[type="submit"] {
+	border-radius: 1em;
+}
+
+table {
+	border: dashed black 1px;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+th, td {
+	padding: 8px;
+}
+
+thead th {
+	border-bottom: solid black 1px;
+}
+
+tbody th {
+	border-right: solid black 1px;
+}
+
+#advanced tbody th {
+	border-bottom: solid black 1px;
+	border-right: none;
+}
+
+th:empty {
+	border-right: none;
+}
+
+th:empty,
+th:empty ~ th {
+	border-bottom: solid black 1px;
+}
+
+th:empty ~ th {
+	border-right: none;
+}
+
+.body {
+	margin-bottom: 24px;
+}
+
+.body + br {
+	display: none;
+}
+
+.body:has(+ br) {
+	margin-bottom: 20px;
+}
+
+#notice {
+	margin: 0;
+	padding: 8px;
+	text-align: center;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	border-radius: 0;
+	position:fixed;
+	width: 100%;
+	border-bottom: solid black 1px;
+}
+
+#notice::after {
+	content: " (click to discard)";
+	opacity: 60%;
+}
+
+#notice:hover {
+	background-color: white;
+	color: black;
+}
+
+#notice:has(+ br) {
+	background-color: white;
+	color: black;
+	cursor: auto;
+}
+
+li {
+	margin-bottom: 8px;
+}
+
+.new_topic a {
+	font-style: italic;
+}
+
+input[type="text"], input[type="password"], textarea {
+	border: dashed black 1px;
+	padding: 4px 8px;
+}
+
+.rounded input[type="text"],
+.rounded input[type="password"] {
+	border-radius: 2em;
+}
+
+.rounded textarea {
+	border-radius: 9px;
+}
+
+.row {
+	text-align: center;
+}
+
+.row * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#enable_poll + p,
+#topic_poll + p {
+	text-align: center;
+}
+
+.border {
+	border: dashed #777 1px;
+}
+
+h4.user {
+	font-size: 1.61803399em;
+	margin-bottom: -8px;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+select {
+	padding: 4px 8px;
+	border-radius: 0;
+	border: solid black 1px;
+}
+
+.rounded select {
+	border-radius: 2em;
+}
+
+#fd-date_after {
+	opacity: 100%;
+}
+
+#fd-date_after * {
+	font-family: 'IBM Plex Sans';
+	background-color: white;
+}
+
+#fd-date_after td {
+	padding: 0;
+}
+
+.date-picker-hover {
+	border: none;
+	background-color: black;
+}
+
+.date-picker-selected-date {
+	border: solid black 1px;
+}
+
+.c:has(+ .body.standalone) {
+	border-style: solid;
+}
+
+.body.standalone {
+	margin-bottom: 32px;
+}
+
+.body.standalone:has(+ form[action^="/new_topic"]) {
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+#topic_poll {
+	border-top: dashed black 1px;
+	padding: 4px;
+}
+
+.rounded #topic_poll {
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+}
+
+#topic_poll td {
+	vertical-align: middle;
+}
+
+#preview {
+	text-align: center;
+}
+
+.body:has(> form[action="/compose_message/admins"]) {
+	border-top: solid black 1px;
+}
+
+
+.rounded .body:has(> form[action="/compose_message/mods"]),
+.rounded .body:has(> form[action="/compose_message/admins"]) {
+	border-top: solid black 1px;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+}
+
+h3:has(+ .body > form[action="/compose_message/mods"]),
+h3:has(+ .body > form[action="/compose_message/admins"]) {
+	text-align: center;
+}
+
+form[action="/compose_message/mods"],
+form[action="/compose_message/admins"] {
+	text-align: center;
+}
+
+form[action="/compose_message/mods"] .inline,
+form[action="/compose_message/admins"] .inline {
+	font-weight: bold;
+}
+
+form[action="/compose_message/mods"] .inline *,
+form[action="/compose_message/admins"] .row {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#notepad_list {
+	margin-bottom: 12px;
+}
+
+fieldset {
+	border: dashed black 1px;
+}
+
+.rounded fieldset {
+	border-radius: 9px;
+}
+
+label[for="merge_uid"] {
+	display: inline-block;
+	margin-top: 12px;
+}
+
+form:has(#e-mail) * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testimony {
+	border-left: none;
+	margin: 0;
+	margin-right: 60px;
+	padding: 0;
+}
+
+.testimony, .testimony * {
+	text-align: center;
+}
+
+.testimony .author {
+	display: block;
+	margin-top: 16px;
+}
+
+.testimony .author::before {
+	content: "— ";
+}
+
+.t_quote::before,
+.t_quote::after {
+	color: #aaa;
+}
