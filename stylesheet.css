@@ -1,3 +1,5 @@
+/* TODO: cover all markup syntax */
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
@@ -424,4 +426,12 @@ form:has(#e-mail) * {
 .t_quote::before,
 .t_quote::after {
 	color: #aaa;
+}
+
+#body_wrapper:has(.noscreen) {
+	text-align: center;
+}
+
+#body_wrapper:has(.noscreen) .caption {
+	text-align: left;
 }
