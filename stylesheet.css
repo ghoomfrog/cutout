@@ -27,6 +27,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 }
 
 #main_menu li a {
@@ -36,6 +37,18 @@ body {
 #main_menu li a:hover {
 	text-decoration: underline;
 }
+
+.history { order: 1; }
+.replies { order: 2; font-size: 1.05em; }
+.topics { order: 3; font-size: 1.1em; }
+.bumps { order: 4; font-size: 1.15em; }
+.hot_topics { order: 5; font-size: 1.2em; }
+.new_topic { order: 6; font-size: 1.25em; }
+.watchlist { order: 7; font-size: 1.2em; }
+.search { order: 8; font-size: 1.15em; }
+.bulletins { order: 9; font-size: 1.1em; }
+.folks { order: 10; font-size: 1.05em; }
+.stuff { order: 11; }
 
 #body_wrapper {
 	padding-left: 16px;
@@ -250,7 +263,7 @@ li {
 }
 
 .new_topic a {
-	font-style: italic;
+	font-weight: bold;
 }
 
 input[type="text"], input[type="password"], textarea {
